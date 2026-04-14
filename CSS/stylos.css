@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #E5E5E5;
+  color: #0f0f0f;
+}
+
+main {
+  flex: 1;
+}
+
+.gym-navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  padding: 20px;
+  background: #EFEFEF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gym-navbar img {
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  border-radius: 38%;
+}
+
+.gym-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.gym-nav a {
+  color: rgb(16, 16, 16);
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.gym-btn {
+  width: 140px;
+  background: #E5E5E5;
+  color: #C43531;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* HERO */
+/* Tamaño del carousel */
+.carousel-item {
+  height: 500px;
+  position: relative; /* 🔥 necesario */
+}
+
+/* Imágenes */
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+}
+
+/* Overlay oscuro (para que el texto se vea mejor) */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Texto encima */
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+}
+/* Reset básico para evitar conflictos */
+* {
+  box-sizing: border-box;
+}
+
+/* Secciones */
+section {
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 60px; /* ✅ */
+}
+
+
+
+/* Grid estable */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.gym-card {
+  background: #BAB9B9;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  transition: 0.3s;
+}
+
+.gym-card:hover {
+  transform: translateY(-5px);
+}
+
+/* GALERÍA */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CONTENEDOR DE IMAGEN */
+.gallery-item {
+  width: 100%;
+  height: 250px;           /* 🔥 altura fija */
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* IMAGEN */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* 🔥 evita deformación */
+  transition: 0.3s;
+}
+
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #E5E5E5;
+  color: black;
+ box-shadow: 0 -5px 15px rgba(0,0,0,0.1); 
+}
