@@ -55,19 +55,18 @@ main {
 }
 
 /* HERO */
-/* Tamaño del carousel */
+
 .carousel-item {
   height: 500px;
-  position: relative; /* 🔥 necesario */
+  position: relative; 
 }
 
 /* Imágenes */
 .carousel-item img {
   height: 100%;
-  object-fit: cover; /* recorta sin deformar */
+  object-fit: cover; 
 }
 
-/* Overlay oscuro (para que el texto se vea mejor) */
 .carousel-item::before {
   content: "";
   position: absolute;
@@ -75,7 +74,7 @@ main {
   background: rgba(0,0,0,0.5);
 }
 
-/* Texto encima */
+
 .carousel-caption {
   z-index: 2;
 }
@@ -88,7 +87,7 @@ main {
 .carousel-caption p {
   font-size: 18px;
 }
-/* Reset básico para evitar conflictos */
+
 * {
   box-sizing: border-box;
 }
@@ -97,12 +96,12 @@ main {
 section {
   padding: 60px;
   text-align: center;
-  margin-bottom: 60px; /* ✅ */
+  margin-bottom: 60px; 
 }
 
 
 
-/* Grid estable */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -136,7 +135,7 @@ section {
 /* CONTENEDOR DE IMAGEN */
 .gallery-item {
   width: 100%;
-  height: 250px;           /* 🔥 altura fija */
+  height: 250px;           
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -146,7 +145,7 @@ section {
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* 🔥 evita deformación */
+  object-fit: cover;       
   transition: 0.3s;
 }
 
