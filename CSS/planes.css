@@ -44,7 +44,7 @@ main {
 .jc-space-between { justify-content: space-between; }
 .g-2 { gap: 10px; }
 
-/* MENU OCULTO (mobile) */
+
 .menu {
   position: fixed;
   list-style: none;
@@ -63,7 +63,6 @@ main {
   transition: 0.3s;
 }
 
-/* 🔥 AQUÍ ESTÁ LA MAGIA REAL */
 .menu:target {
   opacity: 1;
   pointer-events: auto;

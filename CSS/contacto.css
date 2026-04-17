@@ -21,7 +21,7 @@ main {
   z-index: 1000;
   align-items: center;
   padding: 10px;
-  background: #0f0f0f;  /* negro suave */ 
+  background: #0f0f0f;  
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -43,7 +43,7 @@ main {
 .jc-space-between { justify-content: space-between; }
 .g-2 { gap: 10px; }
 
-/* MENU OCULTO (mobile) */
+
 .menu {
   position: fixed;
   list-style: none;
@@ -62,7 +62,7 @@ main {
   transition: 0.3s;
 }
 
-/* 🔥 AQUÍ ESTÁ LA MAGIA REAL */
+
 .menu:target {
   opacity: 1;
   pointer-events: auto;
