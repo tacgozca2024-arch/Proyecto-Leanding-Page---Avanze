@@ -9,6 +9,8 @@ Este proyecto representa un avance en el desarrollo frontend utilizando HTML y C
 
  https://tacgozca2024-arch.github.io/Proyecto-Leanding-Page---Avanze/
 
+ 6
+
 ---
 
 ## 🎯 Objetivo del proyecto
