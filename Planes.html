@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/planes.css">
@@ -10,21 +11,40 @@
 </head>
 <body>
    
-     <!-- NAVBAR -->
-  <header class="gym-navbar">
-    <img src="images/375457608_842943460953269_6500797115608236873_n.jpg"  alt="">
+      <!-- NAVBAR -->
+ <header class="gym-navbar">
+  <nav class="container d-flex ai-center jc-space-between">
 
-    <nav class="gym-nav">
-      <a href="index.html">Inicio</a>
-      <a href="Planes.html">Planes</a>
-      <a href="clases.html">Clases</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <!-- LOGO -->
+    <a href="index.html">
+      <img src="images/375457608_842943460953269_6500797115608236873_n.jpg" class="img" width="60">
+    </a>
 
-    
+    <!-- MENU -->
+    <ul class="menu" id="menu">
+      <li><a href="index.html" class="link">Inicio</a></li>
+      <li><a href="Planes.html" class="link">Planes</a></li>
+      <li><a href="clases.html" class="link">Clases</a></li>
+      <li><a href="contacto.html" class="link">Contacto</a></li>
 
-    <button class="gym-btn">Únete ahora</button>
-  </header>
+      <!-- BOTÓN CERRAR -->
+      <li class="md:d-none">
+        <a href="#" class="link">Cerrar</a>
+      </li>
+    </ul>
+
+    <!-- BOTONES -->
+    <div class="d-flex ai-center g-2">
+      <a href="contacto.html" class="gym-btn">Únete ahora</a>
+
+      <!-- HAMBURGUESA -->
+      <a href="#menu" class="md:d-none">
+        <i class="bi bi-list" style="font-size: 28px;"></i>
+      </a>
+    </div>
+
+  </nav>
+</header>
 
   <main>
      <section id="planes" class="section">
@@ -53,8 +73,54 @@
     </main>
 
 <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Iron Core Gym - Todos los derechos reservados</p>
-  </footer>
+      <!-- footer -->
+<footer class="py-1">
+  <div class="container">
+    <div class="row  justify-content-center text-center  ">
+      <div class="col-12 col-md-12 col-xl-8 px-0 ">
+        <nav class="nav nav-footer justify-content-center">
+          <a class="nav-link" href="#">Nosotros </a>
+          <a class="nav-link" href="#">Blog </a>
+          <a class="nav-link" href="#">Consejos</a>
+          <a class="nav-link" href="#">Termino y condiciones</a>
+          <a class="nav-link" href="#">Nutrición</a>
+        </nav>
+      </div>
+<!-- Desc -->
+<div class="col-lg-8 col-md-12 col-12">
+  <div class="my-2">
+      <!--Facebook-->
+      <a href="#">
+          <i class="bi bi-facebook"></i>
+      </a>
+
+      <!--Instagram-->
+      <a href="#" class="my-2">
+          <i class="bi bi-instagram"></i>
+      </a>
+
+      <!--TikTok-->
+      <a href="#" class="my-2">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      
+      <!--Whatsapp-->  
+      <a href="#" class="my-2">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+
+    </div>
+  </div>
+  <div class="col-lg-8 col-md-12 col-12">
+      <span>© <span id="copyright3">
+          <script>document.getElementById('copyright3').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span> Gym Power Flex - EL templo de la Musculacion </span>
+  </div>
+
+      <!-- Links -->
+
+  </div>
+</div>
+</footer>
 </body>
 </html>
