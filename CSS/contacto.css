@@ -143,6 +143,7 @@ footer {
   background: #0f0f0f;
   color: #e5e5e5;
   padding: 20px;
+  
 }
 
 footer .row {
@@ -151,22 +152,27 @@ footer .row {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+  
 }
 
 footer {
   background: #0f0f0f;
   color: #e5e5e5;
   text-align: center;
+  
 }
 
 .nav-footer .nav-link {
   color: #aaa;
   font-size: 14px;
   transition: 0.3s;
+  
 }
 
 .nav-footer .nav-link:hover {
   color: #fff;
+  
+  
 }
 
 footer i {
@@ -174,20 +180,26 @@ footer i {
   color: #e53935;
   margin: 0 10px;
   transition: 0.3s;
+  
+  
 }
 
 footer i:hover {
   transform: scale(1.2);
   color: #ff4d4d;
+  
+  
 }
 
 footer span {
   font-size: 13px;
   color: #777;
+  
 }
 
-.my-6 {
-  margin: 15px 0; 
+.my-2 {
+  margin: 15px 0;
+
 }
 
 @media (max-width: 768px) {
