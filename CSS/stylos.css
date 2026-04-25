@@ -110,9 +110,6 @@ body {
   text-decoration: none;
 }
 
-.gym-btn:hover {
-  background: #ff4d4d;
-}
 
 /* DESKTOP */
 @media (min-width: 768px) {
@@ -202,9 +199,7 @@ section {
   transition: 0.3s;
 }
 
-.gym-card:hover {
-  transform: translateY(-5px);
-}
+
 
 /* GALERÍA */
 .gallery-grid {
@@ -231,7 +226,6 @@ section {
   object-fit: cover;       
   transition: 0.3s;
 }
-
 
 
 
@@ -283,7 +277,7 @@ footer span {
   color: #777;
 }
 
-.my-2 {
+.my-6 {
   margin: 15px 0; 
 }
 
